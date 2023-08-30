@@ -1,0 +1,30 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="350">
+    <Grid HorizontalAlignment="Right" Width="800" Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="205*"/>
+            <RowDefinition Height="229*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Low" HorizontalAlignment="Left" Margin="644,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="High" HorizontalAlignment="Left" Margin="644,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="140" Text="Lower range boundary:"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="146"><Run Language="uk-ua" Text="Upper"/><Run Text=" range boundary:"/></TextBlock>
+        <Button Content="Generate&#xD;&#xA;" HorizontalAlignment="Left" Margin="644,93,0,0" VerticalAlignment="Top" Width="120" Click="GenerateNumbers_Click" Height="43" RenderTransformOrigin="1.108,-2.498"/>
+        <TextBox x:Name="Numbers" HorizontalAlignment="Left" Margin="506,162,0,0"   VerticalAlignment="Top" Width="128" Height="192" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="506,141,0,0" TextWrapping="Wrap" Text="Prime numbers:" VerticalAlignment="Top"/>
+        <TextBox x:Name="Fibonacci" HorizontalAlignment="Left" Margin="644,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" Height="192" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="644,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Fibonacci numbers:" Width="104"/>
+        <Button Content="Pause thread 1" HorizontalAlignment="Left" Margin="505,161,0,0" VerticalAlignment="Top" Width="129" Height="24" Click="PauseTheard1_Click" Grid.Row="1"/>
+        <Button Content="Resume thread 1" HorizontalAlignment="Left" Margin="505,195,0,0" VerticalAlignment="Top" Width="129" Height="24" Click="ResumeTheard1_Click" Grid.Row="1"/>
+        <Button Content="Pause thread 2" HorizontalAlignment="Left" Margin="644,161,0,0" VerticalAlignment="Top" Width="128" Height="24" Click="PauseTheard2_Click" Grid.Row="1"/>
+        <Button Content="Resume thread 2" HorizontalAlignment="Left" Margin="644,195,0,0" VerticalAlignment="Top" Width="128" Height="24" Click="ResumeTheard2_Click" Grid.Row="1"/>
+        <Button Content="Generate with new&#xA;      boundaries&#xA;" HorizontalAlignment="Left" Margin="500,93,0,0" VerticalAlignment="Top" Width="134" Height="46" Click="GenerateNumbers_Click"/>
+
+    </Grid>
+</Window>
